@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulari</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <form action="/formulari" method="post">
+        <div class="mb-3">
+            <label for="nom" class="form-label">Nom Producte:</label>
+            <input type="text" class="form-control" id="nom" name="nom" required>
+        </div>
+        <div class="mb-3">
+            <label for="descripcio" class="form-label">Descripció:</label>
+            <input type="text" class="form-control" id="descripcio" name="descripcio" required>
+        </div>
+        <div class="mb-3">
+            <label for="preu" class="form-label">Preu</label>
+            <input type="text" class="form-control" id="preu" name="preu" required>
+        </div>
+        <div class="mb-3">
+            <label for="categoria" class="form-label">Categoria:</label>
+            <input type="number" class="form-control" id="categoria" name="categoria" required max="2">
+        </div>
+        <button type="submit" class="btn btn-primary">Agregar Producte</button>
+    </form>
+</div>
+</body>
+</html>
